@@ -1,15 +1,8 @@
-var express = require("express");
+var express = require('express');
 var app = express();
-const request = require('request');
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
 
-const options = {
-    url: 'https://jsonplaceholder.typicode.com/posts',
-    method: 'GET',
-    headers: {
-        'Accept': 'application/json',
-        'Accept-Charset': 'utf-8',
-    }
-};
 
 var airplane = {
     "packet_id": 0,
@@ -67,22 +60,8 @@ app.get("*", function (req, res) {
     console.log("???????????");
 });
 
-app.listen(8000, function () {
-    console.log("My API is running...");
-});
 
-
-
-
-const socket_server = require('http').createServer();
-const io = require('socket.io')(socket_server, {
-    path: '/',
-});
-
-
-socket_server.listen(3000, function () {
-    console.log("Servers started");
-});
+server.listen(process.env.PORT || 4200);
 
 io.on("connect", function (socket) {
     console.log("Someone connected pog");
