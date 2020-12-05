@@ -57,19 +57,18 @@ app.get("*", function (req, res) {
         "ERROR": 404
     });
     res.end();
-    console.log("???????????");
 });
 
 
 server.listen(process.env.PORT || 4200);
 
 io.on("connect", function (socket) {
-    console.log("Someone connected pog");
+    console.log("New socket connection: "+socket.id);
     socket.on("data", function (data) {
-
+        
     });
 
     socket.on("disconnect", function () {
-        console.log("Disconnected");
+        console.log("Disconnected: "+socket.id);
     });
 });
