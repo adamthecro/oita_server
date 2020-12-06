@@ -114,7 +114,7 @@ app.get("/plane", function (req, res) {
     airplane["yaw_m2"] = req.query.yaw_m2;
 
     airplane["accx_m3"] = req.query.accx_m3;
-    airplane["accy_m3"] = req.query.acct_m3;
+    airplane["accy_m3"] = req.query.accy_m3;
     airplane["accz_m3"] = req.query.accz_m3;
     airplane["gyrox_m3"] = req.query.gyrox_m3;
     airplane["gyroy_m3"] = req.query.gyroy_m3;
