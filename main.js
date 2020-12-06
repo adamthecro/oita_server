@@ -141,6 +141,7 @@ app.get("/plane", function (req, res) {
     console.log(airplane);
     io.emit("planedata", airplane);
 });
+app.use("/", express.static('/home/aelmessaarab/tdr_omsintheair/server/app'));
 app.get("*", function (req, res) {
     res.json({
         "ERROR": 404
