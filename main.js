@@ -141,7 +141,7 @@ app.get("/plane", function (req, res) {
     console.log(airplane);
     io.emit("planedata", airplane);
 });
-app.use("/", express.static(__dirname + '/app'));
+app.use("/", express.static('/app'));
 
 
 server.listen(process.env.PORT || 80);
