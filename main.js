@@ -97,7 +97,8 @@ app.get("/plane", function (req, res) {
     airplane["accy_m1"] = req.query.accx_m1;
     airplane["accz_m1"] = req.query.accx_m1;
     airplane["gyrox_m1"] = req.query.gyrox_m1;
-    airplane["gyroy_m1"] = req.query.gyrox_m1;
+    airplane["gyroy_m1"] = req.query.gyroy_m1;
+    airplane["gyroz_m1"] = req.query.gyroz_m1;
     airplane["pitch_m1"] = req.query.pitch_m1;
     airplane["roll_m1"] = req.query.roll_m1;
     airplane["yaw_m1"] = req.query.yaw_m1;
@@ -106,7 +107,8 @@ app.get("/plane", function (req, res) {
     airplane["accy_m2"] = req.query.accx_m2;
     airplane["accz_m2"] = req.query.accx_m2;
     airplane["gyrox_m2"] = req.query.gyrox_m2;
-    airplane["gyroy_m2"] = req.query.gyrox_m2;
+    airplane["gyroy_m2"] = req.query.gyroy_m2;
+    airplane["gyroz_m2"] = req.query.gyroz_m2;
     airplane["pitch_m2"] = req.query.pitch_m2;
     airplane["roll_m2"] = req.query.roll_m2;
     airplane["yaw_m2"] = req.query.yaw_m2;
@@ -115,7 +117,8 @@ app.get("/plane", function (req, res) {
     airplane["accy_m3"] = req.query.accx_m3;
     airplane["accz_m3"] = req.query.accx_m3;
     airplane["gyrox_m3"] = req.query.gyrox_m3;
-    airplane["gyroy_m3"] = req.query.gyrox_m3;
+    airplane["gyroy_m3"] = req.query.gyroy_m3;
+    airplane["gyroz_m3"] = req.query.gyroz_m3;
     airplane["pitch_m3"] = req.query.pitch_m3;
     airplane["roll_m3"] = req.query.roll_m3;
     airplane["yaw_m3"] = req.query.yaw_m3;
