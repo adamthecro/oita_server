@@ -141,13 +141,7 @@ app.get("/plane", function (req, res) {
     console.log(airplane);
     io.emit("planedata", airplane);
 });
-app.use("/", express.static('/app'));
-app.get("*", function (req, res) {
-    res.json({
-        "ERROR": 404
-    });
-    res.end();
-});
+app.use("*", express.static('/app'));
 
 
 server.listen(process.env.PORT || 80);
