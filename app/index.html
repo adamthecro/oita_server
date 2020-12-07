@@ -206,6 +206,10 @@
             document.getElementById("gyrox3").innerHTML = msg["gyrox_m2"];
             document.getElementById("gyroy3").innerHTML = msg["gyroy_m2"];
             document.getElementById("gyroz3").innerHTML = msg["gyroz_m2"];
+
+            document.getElementById("pitch").innerHTML = msg["pitch_gi"] + "º";
+            document.getElementById("roll").innerHTML = msg["roll_gi"] + "º";
+            document.getElementById("yaw").innerHTML = msg["yaw_gi"] + "º";
         });
     </script>
 
