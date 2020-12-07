@@ -138,10 +138,10 @@ app.get("/plane", function (req, res) {
     airplane["gps_state"] = req.query.gps_state;
 
 
-    console.log(airplane);
+    console.log("Received packet: " + airplane["pi"]);
     io.emit("planedata", airplane);
 });
-app.use("/", express.static('/app'));
+app.use("/", express.static(__dirname + '/app'));
 
 
 server.listen(process.env.PORT || 80);
